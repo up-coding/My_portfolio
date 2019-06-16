@@ -102,6 +102,10 @@
   }
 
   .nav-item {
+    padding: 0 1.3rem;
+    margin: 0.7rem 0;
+    background: $secondary-color;
+    border-radius: 1.1rem;
     transform: translate3d(600px, 0, 0);
     @include easeOut;
 
@@ -110,25 +114,39 @@
       transform: translate3d(0, 0, 0);
     }
     &.current > a {
-      color: $secondary-color;
+      //color: $secondary-color;
+      color: $primary-color;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba($third-color, 0.2);
+      background: $third-color;
+
+      &::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
     }
   }
 
   .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 30px;
+    font-size: 1.3rem;
     text-transform: uppercase;
-    padding: 1rem 0;
-    font-weight: 400;
-    color: set-text-color($primary-color);
+    padding: 0;
+    // padding: 1rem 0;
+    font-weight: 500;
+    // color: set-text-color($primary-color);
+    color: $primary-color;
     text-decoration: none;
 
     @include easeOut;
 
-    &:hover {
-      color: $secondary-color;
-    }
+    // &:hover {
+    //   color: $secondary-color;
+    // }
   }
 }
 
