@@ -95,16 +95,26 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url(../img/portrait.jpg);
+      margin-left: auto;
+      background: url(../img/Rahul.jpg) no-repeat;
       border-radius: 50%;
       border: solid 3px $secondary-color;
+      box-shadow: 0rem 0rem 1rem 0.5rem rgba($color-black, 0.1);
     }
+  }
+
+  .vertical-divider {
+    height: 100vh;
+    width: 0.2rem;
+    margin-left: auto;
+    background-color: $secondary-color;
   }
 
   .nav-item {
     padding: 0 1.3rem;
     margin: 0.7rem 0;
     background: $secondary-color;
+
     border-radius: 1.1rem;
     transform: translate3d(600px, 0, 0);
     @include easeOut;
@@ -120,8 +130,8 @@
 
     &:hover {
       transform: translateY(-3px);
-      box-shadow: 0 1rem 2rem rgba($third-color, 0.2);
-      background: $third-color;
+      box-shadow: 0 0.5rem 2rem rgba($color-black, 0.2);
+      // background: $third-color;
 
       &::after {
         transform: scaleX(1.4) scaleY(1.6);
@@ -134,18 +144,20 @@
     display: inline-block;
     position: relative;
     font-size: 1.3rem;
+
     text-transform: uppercase;
     padding: 0;
     // padding: 1rem 0;
     font-weight: 500;
-    // color: set-text-color($primary-color);
-    color: $primary-color;
+    color: $color-black;
+    //color: set-text-color($primary-color);
+
     text-decoration: none;
 
     @include easeOut;
 
     // &:hover {
-    //   color: $secondary-color;
+    //   color: $color-white;
     // }
   }
 }
