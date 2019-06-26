@@ -114,9 +114,9 @@
     padding: 0 1.3rem;
     margin: 0.7rem 0;
     background: $secondary-color;
-
     border-radius: 1.1rem;
     transform: translate3d(600px, 0, 0);
+
     @include easeOut;
 
     &.show {
@@ -124,19 +124,12 @@
       transform: translate3d(0, 0, 0);
     }
     &.current > a {
-      //color: $secondary-color;
       color: $primary-color;
     }
 
     &:hover {
       transform: translateY(-3px);
       box-shadow: 0 0.5rem 2rem rgba($color-black, 0.2);
-      // background: $third-color;
-
-      &::after {
-        transform: scaleX(1.4) scaleY(1.6);
-        opacity: 0;
-      }
     }
   }
 
@@ -144,21 +137,12 @@
     display: inline-block;
     position: relative;
     font-size: 1.3rem;
-
     text-transform: uppercase;
     padding: 0;
-    // padding: 1rem 0;
     font-weight: 500;
     color: $color-black;
-    //color: set-text-color($primary-color);
-
     text-decoration: none;
-
     @include easeOut;
-
-    // &:hover {
-    //   color: $color-white;
-    // }
   }
 }
 

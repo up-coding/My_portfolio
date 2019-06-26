@@ -1,14 +1,14 @@
 //Widescreen
 @include mediaXL {
   .projects {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 //Desktops and laptops
 @include mediaLg {
   .projects {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
