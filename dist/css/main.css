@@ -353,8 +353,15 @@ main {
     main .lg-heading {
       padding-top: 4rem;
       font-size: 2rem; }
+    main .name {
+      padding-top: 7rem;
+      padding-bottom: 0; }
     main .sm-heading {
+      padding-top: 0;
       font-size: 1.1rem; }
+      main .sm-heading .profile {
+        margin: 0;
+        padding: 0; }
     main .boxes {
       display: block;
       width: 95%;
