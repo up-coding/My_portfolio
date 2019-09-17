@@ -336,7 +336,8 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url(../img/portrait_small.jpg);
+      background: url(../img/Rahul.jpg);
+      background-size: cover;
       width: 150px;
       height: 150px; }
   .about-info {
